@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --color-blue-900: #13183f;
+  --color-blue-600: #666ca3;
+  --color-pink-600: #f74780;
+  --color-pink-300: #ffa7c3;
+  --color-grey: #83869a;
+  --color-white: #fff;
+  --gradiant-pink: linear-gradient(hsl(13, 100%, 64%), hsl(332, 87%, 55%));
+  --gradiant-purple: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/***** Header *****/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/***** End Header *****/
