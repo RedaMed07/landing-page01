@@ -25,7 +25,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-style: normal;
+  font-weight: normal;
   margin: 0;
 }
 h1,
@@ -37,6 +37,10 @@ h3 {
 }
 a {
   text-decoration: none;
+}
+p {
+  color: var(--color-grey);
+  line-height: 1.5;
 }
 img {
   display: block;
@@ -79,6 +83,7 @@ img {
 /***** End Header *****/
 /***** Button *****/
 .button {
+  display: inline-block;
   font-size: var(--fs-7);
   font-weight: 700;
   line-height: 1.5;
@@ -94,3 +99,21 @@ img {
   background-color: var(--color-blue-600);
 }
 /***** End Button *****/
+/***** HERO *****/
+.hero {
+}
+.hero h1 {
+  font-size: var(--fs-1);
+  color: var(--color-blue-900);
+}
+.hero p {
+  color: var(--color-grey);
+  margin-block: 24px 40px;
+}
+.button.pink {
+  background: var(--gradiant-pink);
+  color: var(--color-white);
+}
+.button.pink:hover {
+}
+/***** End HERO *****/
