@@ -118,6 +118,8 @@ img {
 .hero picture {
   max-width: 37.5rem;
   justify-self: center;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 /* Tabllete */
 @media (width >= 50.625em) {
