@@ -48,6 +48,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+main{
+  overflow-x: clip;
+}
 /***** Header *****/
 .header {
   display: flex;
@@ -158,7 +161,7 @@ img {
   }
 }
 
-@media (min-width: 75em) {
+@media (width >= 75em) {
   .hero picture {
     max-width: 65rem;
     translate: 47% -27%;
@@ -180,7 +183,7 @@ img {
 
 /***** courses *****/
 .courses {
-  background: linear-gradient(#fff, #f0f1ff 10%);
+  background: linear-gradient(#fff, #f0f1ff 20%);
   padding-block: 64px 80px ;
 }
 .courses .wrapper{
@@ -191,7 +194,7 @@ img {
 .courses img{
   position: absolute;
   top: 0;
-  translate: 0 -50%;
+  translate: 32px -50%;
 }
 .courses .block {
   padding: 64px 32px 40px;
@@ -210,12 +213,14 @@ img {
 }
 .courses p {
   font-size: var(--fs-5);
+  margin: 0;
 }
 .courses a {
   font-size: var(--fs-7);
   font-weight: bold;
   color: var(--color-pink-600);
   transition: opacity 150ms ease-in-out;
+  align-self: end;
 }
 .courses a:hover {
   opacity: 50%;
@@ -223,5 +228,35 @@ img {
 .courses .course {
   background: var(--color-white);
   position: relative;
+  display: grid;
+  gap: 24px;
+  grid-template-rows: min-content 1fr min-content;
+
+}
+
+/* Tablette */
+@media (min-width: 50.625em){
+  .courses .wrapper{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap:24px ;
+  }
+.courses .block.title{
+  padding-block-start: 64px;
+}
+}
+/* Desktop */
+@media (width >= 75em) {
+  .courses .wrapper{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 84px 32px;
+  }
 }
 /***** End courses *****/
+
+/***** FOOTER *****/
+
+
+
+
+
+/***** End FOOTER *****/
